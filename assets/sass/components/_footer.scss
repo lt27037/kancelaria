@@ -2,7 +2,85 @@
 
 .footer{
     @include constant-width;
+    min-height: 768px;
     display: grid;
     grid-template-columns: 45% 55%;
     grid-template-rows: 1fr 70px 70px;
+    background: $color-blue;
+    padding-top: 96px;
+    padding-bottom: 36px;
+    margin-top: 30vh;
+    &__logo{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        align-self: start;
+    }
+    &__wrapper{
+        @include element-flex(row, flex-start, flex-start);
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+    }
+    &__list{
+        @include element-flex(column, flex-start, flex-start);
+        list-style: none;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        &__title{
+            font-family: $font-ultra;
+            color: $font-light;
+            padding: 0 0 18px;
+            margin: 0;
+            font-size: $font-m;
+            font-weight: 400;
+        }
+        &__item{
+            color: $font-light;
+            padding: 12px 0;
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+    }
+    &__list.footer__menu{
+        &__item{
+            padding: 6px 0;
+        }
+    }
+    &__link{
+        @include element-flex(row, flex-start, center);
+        column-gap: 12px;
+        text-decoration: none;
+        color: $font-light;
+    }
+    &__copyright{
+        @include element-flex(row, flex-start, center);
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+        color: $font-light;
+    }
+    &__linkWrapper{
+        @include element-flex(row, flex-end, center);
+        grid-column: 2;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+        column-gap: 24px;
+    }
+    &__toTop{
+        grid-column: 2;
+        grid-row: 2;
+        width: 24px;
+        height: 24px;
+        background: url(../img/top-arrow-icon.svg) no-repeat;
+        background-position: center;
+        border: none;
+        justify-self: end;
+        align-self: end;
+        margin: 25px 0;
+    }
 }

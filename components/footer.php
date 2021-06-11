@@ -1,7 +1,7 @@
 <footer class="footer">
     <img src="../assets/img/logo-tarcza.svg" alt="logo" class="footer__logo">
     <div class="footer__wrapper">
-        <ul class="footer__list">
+        <ul class="footer__list footer__menu">
             <h3 class="footer__list__title">Menu</h3>
             <a href="/#" class="footer__link">
                 <li class="footer__list__item">O firmie</li>
@@ -29,7 +29,7 @@
             </a>
         </ul>
     </div>
-    <button class="footer__toTop" />
+    <button class="footer__toTop"></button>
     <div class="footer__copyright">Ponomarenko & Partners Kancelaria Prawna © 2021</div>
     <div class="footer__linkWrapper">
         <a href="/#" class="footer__link">Umowa użytkownika</a>

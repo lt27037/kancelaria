@@ -10,6 +10,6 @@
 <body>
     <?php @include './components/navbar.php' ?>
     <div style="height: 30vh"/>
-    <?php @include './components/footer.php' ?>
+    <?php @include './components/footer.php' ?> 
 </body>
 </html>
