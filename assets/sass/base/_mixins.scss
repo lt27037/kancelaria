@@ -1,0 +1,18 @@
+@import 'vars';
+
+@mixin constant-width{
+	width: 100%;
+	padding: 0 calc(50vw - 600px);
+}
+
+@mixin element-flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin main-title{
+	font-size: $font-xl;
+	font-family: $font-ultra;
+}

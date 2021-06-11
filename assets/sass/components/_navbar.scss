@@ -1,0 +1,29 @@
+@import '../base/index';
+@import 'button';
+
+.navbar{
+    @include constant-width;
+    @include element-flex(row, space-between, center);
+    height: 80px;
+    background: $color-blue;
+    &__wrapper{
+        @include element-flex(row, center, center);
+        column-gap: 36px;
+    }
+    &__menu{
+        @include element-flex(row, flex-start, center);
+        list-style: none;
+        &__link{
+            padding: 12px;
+            color: $font-light;
+            text-decoration: none;
+        }
+        &__item{
+            color: $font-light;
+        }
+    }
+    &__select{
+        color: $font-light;
+        font-size: $font-s;
+    }
+}
