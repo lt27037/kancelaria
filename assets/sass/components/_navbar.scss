@@ -6,6 +6,10 @@
     @include element-flex(row, space-between, center);
     height: 80px;
     background: $color-blue;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
     &__wrapper{
         @include element-flex(row, center, center);
         column-gap: 36px;

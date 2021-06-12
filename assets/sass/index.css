@@ -52,6 +52,10 @@ body {
           align-items: center;
   height: 80px;
   background: #383F56;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
 }
 
 .navbar__wrapper {
@@ -131,7 +135,6 @@ body {
   background: #383F56;
   padding-top: 96px;
   padding-bottom: 36px;
-  margin-top: 30vh;
 }
 
 .footer__logo {
@@ -292,5 +295,183 @@ body {
       -ms-grid-row-align: end;
       align-self: end;
   margin: 25px 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B2B2B;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+}
+
+.topSection {
+  width: 100%;
+  padding: 0 calc(50vw - 600px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #383F56;
+  background-image: url(../img/topSection.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.topSection__logo {
+  width: 32px;
+}
+
+.topSection__title {
+  font-size: 48px;
+  color: #F2F2F2;
+  font-family: "Ultra", serif;
+  width: 580px;
+  line-height: 60px;
+  margin: 54px 0 24px;
+}
+
+.topSection__text {
+  width: 580px;
+  color: #F2F2F2;
+  letter-spacing: 0.5px;
+  margin-bottom: 92px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B2B2B;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+}
+
+.secondSection {
+  width: 100%;
+  padding: 0 calc(50vw - 600px);
+  min-height: 100vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.secondSection::before {
+  content: '';
+  width: 50%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #383F56;
+  z-index: -1;
+}
+
+.secondSection__leftColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  padding: 96px 114px 49px 0;
+  background-color: #383F56;
+}
+
+.secondSection__leftColumn__img {
+  width: 384px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.secondSection__title {
+  font-size: 48px;
+  color: #F2F2F2;
+  font-family: "Ultra", serif;
+  margin: 0;
+  margin-right: 50px;
+}
+
+.secondSection__rightColumn {
+  padding: 96px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B2B2B;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+}
+
+.homePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */

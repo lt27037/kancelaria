@@ -1,0 +1,41 @@
+@import '../base/index';
+
+.secondSection{
+    @include constant-width;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &::before{
+        content: '';
+        width: 50%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: $color-blue;
+        z-index: -1;
+    }
+    &__leftColumn{
+        @include element-flex(column, flex-end, flex-end);
+        width: 100%;
+        height: 100vh;
+        padding: 96px 114px 49px 0;
+        background-color: $color-blue;
+        &__img{
+            width: 384px;
+            user-select: none;
+        }
+    }
+    &__title{
+        font-size: $font-xl;
+        color: $font-light;
+        font-family: $font-ultra;
+        margin: 0;
+        margin-right: 50px;
+    }
+    &__rightColumn{
+        padding: 96px 36px;
+        @include element-flex(column, flex-start, flex-start);
+    }
+}

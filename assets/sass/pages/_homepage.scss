@@ -1,0 +1,8 @@
+@import '../base/index';
+
+.homePage{
+    @include element-flex(column, flex-start, flex-start);
+    width: 100%;
+    min-height: 100vh;
+    
+}
