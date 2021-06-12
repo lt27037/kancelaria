@@ -3,7 +3,7 @@
 .topSection{
     @include constant-width;
     @include element-flex(column, center, flex-start);
-    background-color: $color-blue;
+    background-color: $color-blue-dark;
     background-image: url(../img/topSection.png);
     background-size: cover;
     width: 100%;

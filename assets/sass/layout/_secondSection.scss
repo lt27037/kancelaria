@@ -38,4 +38,10 @@
         padding: 96px 36px;
         @include element-flex(column, flex-start, flex-start);
     }
+    &__text{
+        margin-bottom: 24px;
+    }
+    &__label{
+        font-family: $font-ultra;
+    }
 }

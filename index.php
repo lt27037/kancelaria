@@ -32,10 +32,43 @@
                 >
             </div>
             <div class="secondSection__rightColumn">
-                
+                <div class="secondSection__wrapper">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="aboutSection">
+            <div class="aboutSection__about">
+                <h2 class="aboutSection__about__title">O nas</h2>
+                <div class="aboutSection__about__left">
+                    <p class="aboutSection__about__text">
+                    Międzynarodowa kancelaria prawna GEMIX jest firmą specjalizującą się w zapewnieniu pełnego zakresu usług prawnych klientom korporacyjnym i indywidualnym w zakresu prawa rosyjskiego i zagranicznego.
+                    </p>
+                    <p class="aboutSection__about__text">
+                    Kancelaria prawna GEMIX została założona w 2007 roku, a dziś jej siłę stanowi zespół ponad 50 wykwalifikowanych prawników, adwokatów oraz doradców podatkowych posiadających doświadczenie w obsłudze prawnej dużych projektów w Rosji i na całym świecie.
+                    </p>
+                    <p class="aboutSection__about__text">
+                    Kancelaria prawna GEMIX posiada reputację stabilnego i niezawodnego partnera biznesowego realizującego zadania poprzez zgrany zespół profesjonalistów.
+                    </p>
+                </div>
+                <div class="aboutSection__about__right">
+                    <p class="aboutSection__about__text">Naszą misją jest bycie niezawodnym partnerem dla klientów, zapewniając im obsługę prawną w celu skutecznego rozwiązywania ich problemów, koncentrując się na ostatecznym wyniku, który przekracza ich oczekiwania, przy jednoczesnym zastosowaniu indywidualnego podejścia, maksymalnego komfortu i całkowitej poufności.
+                    </p>
+                </div>
+            </div>
+            <div class="aboutSection__crew">
+
+            </div>
+            <div class="aboutSection__values">
+
             </div>
         </section>
     </main>
     <?php @include './components/footer.php' ?> 
 </body>
 </html>
+
+
+
+
+
