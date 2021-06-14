@@ -2,7 +2,6 @@
 
 .secondSection{
     @include constant-width;
-    min-height: 100vh;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,7 +18,6 @@
     &__leftColumn{
         @include element-flex(column, flex-end, flex-end);
         width: 100%;
-        height: 100vh;
         padding: 96px 114px 49px 0;
         background-color: $color-blue;
         &__img{
@@ -37,11 +35,15 @@
     &__rightColumn{
         padding: 96px 36px;
         @include element-flex(column, flex-start, flex-start);
+        row-gap: 72px;
     }
-    &__text{
-        margin-bottom: 24px;
+    &__wrapper{
+        @include element-flex(column, flex-start, flex-start);
+        row-gap: 24px;
     }
     &__label{
         font-family: $font-ultra;
+        margin: 0;
+        font-size: l;
     }
 }

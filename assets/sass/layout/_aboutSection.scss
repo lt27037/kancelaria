@@ -2,10 +2,24 @@
 
 .aboutSection{
     @include constant-width;
-    min-height: 200vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 100vh);
+    &__title{
+        font-family: $font-ultra;
+        font-size: $font-xl;
+        color: $font-light;
+        margin: 0;
+        grid-column: 1 / 3;
+        &.font-dark{
+            color: $font-dark;
+        }
+    }
+    &__text{
+        color: $font-light;
+        &.font-dark{
+            color: $font-dark;
+        }
+    }
     &__about{
         grid-row: 1;
         grid-column: 1 / 3;
@@ -24,7 +38,7 @@
         &::after{
             content: '';
             width: 100vw;
-            height: 100vh;
+            height: 100%;
             position: absolute;
             left: 50%;
             top: 0;
@@ -38,16 +52,6 @@
             width: 100%;
             height: 100%;
         }
-        &__title{
-            font-family: $font-ultra;
-            font-size: $font-xl;
-            color: $font-light;
-            margin: 0;
-            grid-column: 1 / 3;
-        }
-        &__text{
-            color: $font-light;
-        }
     }
     &__crew{
         grid-row: 2;
@@ -59,10 +63,11 @@
         z-index: 2;
         color: $font-light;
         position: relative;
+        padding: 92px 60px 92px 0px;
         &::after{
             content: '';
             width: 50vw;
-            height: 100vh;
+            height: 100%;
             position: absolute;
             right: 0;
             top: 0;
@@ -89,10 +94,11 @@
         z-index: 2;
         background: $color-lightest-gray;
         position: relative;
+        padding: 96px 0 96px 120px;
         &::after{
             content: '';
             width: 50vw;
-            height: 100vh;
+            height: 100%;
             position: absolute;
             left: 0;
             top: 0;
