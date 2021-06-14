@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php @include './components/navbar.php' ?>
-    <main class="homePage">
+    <main class="container">
         <section class="topSection">
             <img src="assets/img/logo-tarcza.svg" alt="logo" class="topSection__logo" >
             <h1 class="topSection__title">

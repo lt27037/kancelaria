@@ -505,7 +505,7 @@ body {
 .secondSection::before {
   content: '';
   width: 50%;
-  height: 100vh;
+  height: 100%;
   left: 0;
   top: 0;
   position: absolute;
@@ -837,21 +837,7 @@ body {
   margin: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #2B2B2B;
-}
-
-body {
-  background: #EDEDED;
-  margin: 0;
-}
-
-.homePage {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
