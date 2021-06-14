@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 @import 'base/index';
 
 //components
 @import 'components/navbar';
 @import 'components/footer';
+@import 'components/valutation';
 
 //layouts
 @import 'layout/topSection'; 
 @import 'layout/secondSection';
 @import 'layout/aboutSection';
+@import 'layout/membership';
+@import 'layout/partnership';
 
 //pages
-@import 'pages/homepage';
+@import 'pages/homepage'; 

@@ -63,6 +63,16 @@
 
             </div>
         </section>
+        <?php @include './components/valutation.php' ?>
+        <section class="members">
+            <h2 class="members__title">Członkowstwo</h2>
+            <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+        </section>
+        <section class="partners">
+            <h2 class="partners__title">Partnerzy</h2>
+            <p class="partners__label">pl.gemixgroup.com</p>
+            <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+        </section>
     </main>
     <?php @include './components/footer.php' ?> 
 </body>
