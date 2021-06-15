@@ -1,0 +1,9 @@
+@import '../base/index';
+
+.contact{
+    @include constant-width();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 360px;
+    padding-bottom: 96px;
+}

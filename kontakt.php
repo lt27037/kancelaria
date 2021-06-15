@@ -10,6 +10,11 @@
 <body>
     <?php @include './components/navbar.php' ?>
     <main class="container">
+        <h2 class="title">Kontakt</h2>
+        <div class="contact">
+            <div class="contact__wrapper">kolumna 1</div>
+            <div class="contact__wrapper">kolumna 2</div>
+        </div>
         <?php @include './components/valutation.php' ?>
     </main> 
     <?php @include './components/footer.php' ?> 

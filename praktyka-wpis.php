@@ -10,6 +10,15 @@
 <body>
     <?php @include './components/navbar.php' ?>
     <main class="container">
+        <h2 class="title">Nieruchomości i budownictwo</h2>
+        <div class="practicArticleWrapper">
+            <div class="practicArticleWrapper__left">
+                kolumna 1
+            </div>
+            <div class="practicArticleWrapper__right">
+                kolumna 2
+            </div>
+        </div>
         <?php @include './components/valutation.php' ?>
     </main> 
     <?php @include './components/footer.php' ?> 

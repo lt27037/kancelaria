@@ -9,6 +9,7 @@
     padding-top: 96px;
     padding-bottom: 96px;
     column-gap: 72px;
+    background: $color-lighter-gray;
     &__left{
         @include element-flex(column, flex-start, flex-start);
         width: 100%;

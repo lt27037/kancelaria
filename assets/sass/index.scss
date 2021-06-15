@@ -15,15 +15,19 @@
 @import 'layout/membership';
 @import 'layout/partnership';
 @import 'layout/practicArticles';
+@import 'layout/practicArticlePage';
+@import 'layout/contact';
 
 .container{
     @include element-flex(column, flex-start, flex-start);
     width: 100%;
     min-height: 100vh;
+    background-color: $color-lightest-gray;
 }
 
 .title{
+    @include constant-width();
     font-size: $font-xl;
     font-family: $font-ultra;
-    margin: 0 0 96px;
+    margin: 130px 0 96px;
 }

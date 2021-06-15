@@ -13,13 +13,14 @@
         top: 0;
         position: absolute;
         background: $color-blue;
-        z-index: -1;
+        z-index: 0;
     }
     &__leftColumn{
         @include element-flex(column, flex-end, flex-end);
         width: 100%;
         padding: 96px 114px 49px 0;
         background-color: $color-blue;
+        z-index: 2;
         &__img{
             width: 384px;
             user-select: none;
