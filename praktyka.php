@@ -10,6 +10,15 @@
 <body>
     <?php @include './components/navbar.php' ?>
     <main class="container">
+        <h2 class="title">Obszary praktyki</h2>
+        <section class="practicArticles">
+            <?php include './components/practicArticle.php' ?>
+            <?php include './components/practicArticle.php' ?>
+            <?php include './components/practicArticle.php' ?>
+            <?php include './components/practicArticle.php' ?>
+            <?php include './components/practicArticle.php' ?>
+            <?php include './components/practicArticle.php' ?>
+        </section>
         <?php @include './components/valutation.php' ?>
     </main> 
     <?php @include './components/footer.php' ?> 

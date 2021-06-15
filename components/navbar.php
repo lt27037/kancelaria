@@ -2,16 +2,16 @@
     <div class="navbar__wrapper">
         <img src="../assets/img/logo.svg" alt="logo">
         <ul class="navbar__menu">
-            <a href="/#" class="navbar__menu__link">
+            <a href="/" class="navbar__menu__link">
                 <li class="navbar__menu__item">O firmie</li>
             </a>
-            <a href="/#" class="navbar__menu__link">
+            <a href="/praktyka.php" class="navbar__menu__link">
                 <li class="navbar__menu__item">Obszar praktyki</li>
             </a>
-            <a href="/#" class="navbar__menu__link">
+            <a href="/komunikacja.php" class="navbar__menu__link">
                 <li class="navbar__menu__item">Komunikacja z akcjonariuszami</li>
             </a>
-            <a href="/#" class="navbar__menu__link">
+            <a href="/kontakt.php" class="navbar__menu__link">
                 <li class="navbar__menu__item">Kontakt</li>
             </a>
         </ul>

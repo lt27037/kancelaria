@@ -1,0 +1,26 @@
+@import '../base/index';
+
+
+.practicArticle{
+    @include element-flex(column, space-between, flex-start);
+    padding: 12px;
+    min-height: 260px;
+    width: 100%;
+    background: transparent;
+    &:hover{
+        background: #E2E2E2;
+    }
+    &__wrapper{
+        @include element-flex(column, flex-start, flex-start);
+        width: 100%;
+        row-gap: 12px;
+    }
+    &__title{
+        font-family: $font-ultra;
+        width: 100%;
+        margin: 0;
+    }
+    &__text{
+        width: 100%;
+    }
+}

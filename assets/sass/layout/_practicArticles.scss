@@ -1,0 +1,9 @@
+@import '../base/index';
+
+.practicArticles{
+    @include constant-width;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+}

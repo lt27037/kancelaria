@@ -35,6 +35,13 @@ body {
   color: #2B2B2B;
 }
 
+.readMore {
+  background: transparent;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #383F56;
+}
+
 .navbar {
   width: 100%;
   padding: 0 calc(50vw - 600px);
@@ -319,6 +326,13 @@ body {
   color: #2B2B2B;
 }
 
+.readMore {
+  background: transparent;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #383F56;
+}
+
 .valutation {
   width: 100%;
   padding: 0 calc(50vw - 600px);
@@ -419,6 +433,72 @@ body {
 .valutation__form__info {
   font-family: "Prompt", sans-serif;
   letter-spacing: 0.5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B2B2B;
+}
+
+body {
+  background: #EDEDED;
+  margin: 0;
+}
+
+.practicArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 12px;
+  min-height: 260px;
+  width: 100%;
+  background: transparent;
+}
+
+.practicArticle:hover {
+  background: #E2E2E2;
+}
+
+.practicArticle__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  row-gap: 12px;
+}
+
+.practicArticle__title {
+  font-family: "Ultra", serif;
+  width: 100%;
+  margin: 0;
+}
+
+.practicArticle__text {
+  width: 100%;
 }
 
 * {
@@ -837,6 +917,31 @@ body {
   margin: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B2B2B;
+}
+
+body {
+  background: #EDEDED;
+  margin: 0;
+}
+
+.practicArticles {
+  width: 100%;
+  padding: 0 calc(50vw - 600px);
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 24px;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,5 +958,11 @@ body {
           align-items: flex-start;
   width: 100%;
   min-height: 100vh;
+}
+
+.title {
+  font-size: 48px;
+  font-family: "Ultra", serif;
+  margin: 0 0 96px;
 }
 /*# sourceMappingURL=index.css.map */
