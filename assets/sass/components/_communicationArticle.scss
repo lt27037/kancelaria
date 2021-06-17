@@ -1,0 +1,22 @@
+@import '../base/index';
+
+.communicationArticle{
+    @include element-flex(column, flex-start, flex-start);
+    width: 100%;
+    padding: 30px 0;
+    &__date{
+        padding-bottom: 8px;
+    }
+    &__title{
+        margin: 0;
+        font-family: $font-ultra;
+        margin-bottom: 12px;
+    }
+    &__content{
+        margin-bottom: 36px;
+        letter-spacing: 0.5px;
+    }
+    &__label{
+        margin-bottom: 19px;
+    }
+}

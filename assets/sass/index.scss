@@ -7,6 +7,8 @@
 @import 'components/footer';
 @import 'components/valutation';
 @import 'components/practicArticle';
+@import 'components/communicationArticle';
+@import 'components/scrollIcon';
 
 //layouts
 @import 'layout/topSection'; 
@@ -17,6 +19,7 @@
 @import 'layout/practicArticles';
 @import 'layout/practicArticlePage';
 @import 'layout/contact';
+@import 'layout/communication';
 
 .container{
     @include element-flex(column, flex-start, flex-start);

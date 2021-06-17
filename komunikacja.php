@@ -10,6 +10,13 @@
 <body>
     <?php @include './components/navbar.php' ?>
     <main class="container">
+        <h2 class="title">Komunikacja z akcjonariuszami</h2>
+        <section class="communication">
+            <?php include './components/communicationArticle.php' ?>
+            <?php include './components/communicationArticle.php' ?>
+            <?php include './components/communicationArticle.php' ?>
+            <?php include './components/communicationArticle.php' ?>
+        </section>
         <?php @include './components/valutation.php' ?>
     </main> 
     <?php @include './components/footer.php' ?> 

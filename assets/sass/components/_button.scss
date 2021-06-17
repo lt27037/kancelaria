@@ -1,3 +1,5 @@
+@import '../base/index';
+
 .button{
     border: none;
     background: $color-yellow;
@@ -11,4 +13,12 @@
     letter-spacing: 0.5px;
     color: $color-blue;
     cursor: pointer;
+}
+
+.ghost{
+    color: $color-lightest-gray;
+    padding: 12px 36px;
+    border-style: none;
+    border: 1px solid $color-lightest-gray;
+    background: transparent;
 }
