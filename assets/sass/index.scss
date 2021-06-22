@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+@font-face {
+    src: url(../fonts/ultra-regular.ttf);
+    font-family: 'Ultra';
+}
+
 @import 'base/index';
 
 //components
@@ -21,6 +27,10 @@
 @import 'layout/contact';
 @import 'layout/communication';
 
+body{
+    overflow-x: hidden;
+}
+
 .container{
     @include element-flex(column, flex-start, flex-start);
     width: 100%;
@@ -33,4 +43,8 @@
     font-size: $font-xl;
     font-family: $font-ultra;
     margin: 130px 0 96px;
+}
+
+.content-wp{
+    @include constant-width;
 }

@@ -16,7 +16,32 @@
                 kolumna 1
             </div>
             <div class="practicArticleWrapper__right">
-                kolumna 2
+                <ul class="practicMenu">
+                    <li class="practicMenu__item">
+                        <a href="#">Alternatywne metody rozwiązywania sporów</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Nieruchomości i budownictwo</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Praktyka celna i wspieranie zagranicznej działalności gospodarczej</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Praktyka handlowa</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Praktyka karna</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Praktyka korporacyjna / fuzje i przejęcia</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Praktyka podatkowa</a>
+                    </li>
+                    <li class="practicMenu__item">
+                        <a href="#">Praktyka prawa pracy</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <?php @include './components/valutation.php' ?>

@@ -20,11 +20,11 @@
                 <li class="footer__list__item">+7 (495) 649-62-61</li>
             </a>
             <a href="/#" class="footer__link">
-                <img src="../assets/img/phone-icon.svg" alt="ikona" class="footer__icon">
+                <img src="../assets/img/email-icon.svg" alt="ikona" class="footer__icon">
                 <li class="footer__list__item">info@p&p.com</li>
             </a>
             <a href="/#" class="footer__link">
-                <img src="../assets/img/phone-icon.svg" alt="ikona" class="footer__icon">
+                <img src="../assets/img/place-icon.svg" alt="ikona" class="footer__icon">
                 <li class="footer__list__item">ul. Prymasa Augusta Hlonda 2A/77, 02-972 Warszawa, Polska</li>
             </a>
         </ul>

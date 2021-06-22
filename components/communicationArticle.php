@@ -5,4 +5,7 @@
     <h4 class="communicationArticle__title">Załączniki</h4>
     <span class="communicationArticle__label">Wezwanie do złożenia dokumentów 08.06.2020</span>
     <button class="button">Pobierz</button>
+    <h4 class="communicationArticle__title">Załączniki</h4>
+    <span class="communicationArticle__label">Wezwanie do złożenia dokumentów 08.06.2020</span>
+    <button class="button">Pobierz</button>
 </article>

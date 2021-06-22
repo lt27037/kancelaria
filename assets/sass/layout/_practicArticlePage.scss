@@ -5,4 +5,36 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
+    &__left{
+        @include element-flex(column, flex-start, flex-start);
+    }
+    &__right{
+        @include element-flex(column, flex-start, flex-end);
+    }
+}
+
+
+.practicMenu{
+    position: sticky;
+    top: 176px;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    list-style: none;
+    &__item{
+        letter-spacing: 0.5px;
+        padding: 7px 0;
+        a{
+            color: $font-dark;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .practic--active a{
+        font-weight: 800; 
+        font-family: $font-popins;
+        color: $color-blue;
+    }
 }

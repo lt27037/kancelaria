@@ -5,6 +5,10 @@
     background: $color-yellow;
     padding: 12px 36px;
     color: $font-dark;
+    transition: background .2s;
+    &:hover{
+        background: darken($color-yellow, 5%);
+    }
 }
 
 .readMore{
