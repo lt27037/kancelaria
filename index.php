@@ -106,6 +106,7 @@
         </section>
     </main>
     <?php @include './components/footer.php' ?> 
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>
 
