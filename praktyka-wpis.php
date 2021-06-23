@@ -10,6 +10,17 @@
 <body>
     <?php @include './components/navbar.php' ?>
     <main class="container">
+        <ul class="currentPath">
+            <li class="currentPath__path">
+                <a href="#">Strona główna</a>
+            </li>
+            <li class="currentPath__path">
+                <a href="#">Obszar Praktyki</a>
+            </li>
+            <li class="currentPath__path">
+                <a href="#">Obszar Praktyki</a>
+            </li>
+        </ul>
         <h2 class="title">Nieruchomości i budownictwo</h2>
         <div class="practicArticleWrapper">
             <div class="practicArticleWrapper__left">

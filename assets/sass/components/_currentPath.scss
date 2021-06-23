@@ -3,7 +3,7 @@
 .currentPath{
     @include constant-width;
     @include element-flex(row, flex-start, center);
-    margin-top: 36px;
+    margin-top: 130px;
     list-style: none;
     &__path{
         color: $color-blue;

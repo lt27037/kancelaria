@@ -36,7 +36,6 @@ body{
     @include element-flex(column, flex-start, flex-start);
     width: 100%;
     min-height: 100vh;
-    padding-top: 80px;
     background-color: $color-lightest-gray;
 }
 
