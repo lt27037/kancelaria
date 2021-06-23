@@ -1,0 +1,34 @@
+@import '../base/index';
+
+.currentPath{
+    @include constant-width;
+    @include element-flex(row, flex-start, center);
+    margin-top: 36px;
+    list-style: none;
+    &__path{
+        color: $color-blue;
+        letter-spacing: 0.5px;
+        position: relative;
+        &:not(:last-of-type){
+            padding-right: 24px;
+            margin-right: 24px;
+            &::after{
+                content: '';
+                width: 6px; 
+                height: 24px;
+                background: url(../img/slash.svg) no-repeat;
+                background-position: center;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(50%, -50%);
+            }
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

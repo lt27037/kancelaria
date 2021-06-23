@@ -15,6 +15,7 @@
 @import 'components/practicArticle';
 @import 'components/communicationArticle';
 @import 'components/scrollIcon';
+@import 'components/currentPath';
 
 //layouts
 @import 'layout/topSection'; 
@@ -35,6 +36,7 @@ body{
     @include element-flex(column, flex-start, flex-start);
     width: 100%;
     min-height: 100vh;
+    padding-top: 80px;
     background-color: $color-lightest-gray;
 }
 
@@ -42,7 +44,7 @@ body{
     @include constant-width();
     font-size: $font-xl;
     font-family: $font-ultra;
-    margin: 130px 0 96px;
+    margin: 36px 0 96px;
 }
 
 .content-wp{
