@@ -7,7 +7,10 @@
     background-image: url(../img/topSection.png);
     background-size: cover;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
+    @include tabletWidth{
+        padding: 0 20px;
+    }
     &__logo{
         width: 32px;
     }
@@ -18,11 +21,19 @@
         width: 580px;
         line-height: 60px;
         margin: 54px 0 24px;
+        @include tabletWidth{
+            width: auto;
+            padding: 0 20px 0 0;
+        }
     }
     &__text{
         width: 580px;
         color: $font-light;
         letter-spacing: 0.5px;
         margin-bottom: 92px;
+        @include tabletWidth{
+            width: auto;
+            padding: 0 20px 0 0;
+        }
     }
 }

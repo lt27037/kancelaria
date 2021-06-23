@@ -7,9 +7,16 @@
     padding-top: 96px;
     padding-bottom: 96px;
     row-gap: 24px;
+    @include tabletWidth{
+        padding: 48px 20px;
+        row-gap: 6px;
+    }
     &__title{
         font-size: $font-xl;
         font-family: $font-ultra;
         margin: 0;
+        @include tabletWidth{
+            font-size: 40px;
+        }
     }
 }

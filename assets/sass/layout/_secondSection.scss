@@ -5,6 +5,9 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+    }
     &::before{
         content: '';
         width: 50%;
@@ -14,6 +17,9 @@
         position: absolute;
         background: $color-blue;
         z-index: 0;
+        @include tabletWidth{
+            display: none;
+        }
     }
     &__leftColumn{
         @include element-flex(column, flex-end, flex-end);
@@ -21,8 +27,12 @@
         padding: 96px 114px 49px 0;
         background-color: $color-blue;
         z-index: 2;
+        @include tabletWidth{
+            padding: 36px 20px;
+        }
         &__img{
-            width: 384px;
+            width: 100%;
+            max-width: 384px;
             user-select: none;
         }
     }
@@ -32,15 +42,26 @@
         font-family: $font-ultra;
         margin: 0;
         margin-right: 50px;
+        @include tabletWidth{
+            padding: 0;
+            margin: 0;
+        }
     }
     &__rightColumn{
         padding: 96px 36px;
         @include element-flex(column, flex-start, flex-start);
         row-gap: 72px;
+        @include tabletWidth{
+            padding: 36px 20px;
+            row-gap: 48px;
+        }
     }
     &__wrapper{
         @include element-flex(column, flex-start, flex-start);
         row-gap: 24px;
+        @include tabletWidth{
+            row-gap: 12px;
+        }
     }
     &__label{
         font-family: $font-ultra;

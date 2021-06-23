@@ -10,6 +10,10 @@
     padding-bottom: 96px;
     column-gap: 72px;
     background: $color-lighter-gray;
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+        padding: 48px 20px;
+    }
     &__left{
         @include element-flex(column, flex-start, flex-start);
         width: 100%;
@@ -20,6 +24,9 @@
         width: 100%;
         height: 100%;
         padding-bottom: 150px;
+        @include tabletWidth{
+            display: none;
+        }
     }
     &__title{
         font-family: $font-ultra;

@@ -32,6 +32,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .container{
     @include element-flex(column, flex-start, flex-start);
     width: 100%;

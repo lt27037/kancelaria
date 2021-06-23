@@ -11,6 +11,9 @@
     top: 0;
     z-index: 99;
     transition: background .3s;
+    @include tabletWidth{
+        display: none;
+    }
     &__wrapper{
         @include element-flex(row, center, center);
         column-gap: 36px;
