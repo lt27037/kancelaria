@@ -11,6 +11,18 @@
     &__right{
         @include element-flex(column, flex-start, flex-end);
     }
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+        &__left{
+            @include element-flex(column, flex-start, flex-start);
+            width: 100%;
+            min-height: 50vh;
+            padding: 36px 20px;
+        }
+        &__right{
+            display: none;
+        }
+    }
 }
 
 
@@ -36,5 +48,9 @@
         font-weight: 800; 
         font-family: $font-popins;
         color: $color-blue;
+    }
+
+    @include tabletWidth{
+        display: none;
     }
 }
