@@ -14,7 +14,7 @@
     @include tabletWidth{
         @include element-flex(column, flex-start, flex-start);
         &__left{
-            @include element-flex(column, flex-start, flex-start);
+            display: block;
             width: 100%;
             min-height: 50vh;
             padding: 36px 20px;

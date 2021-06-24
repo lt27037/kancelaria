@@ -6,4 +6,10 @@
     grid-template-columns: repeat(2, 1fr);
     min-height: 360px;
     padding-bottom: 96px;
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+        row-gap: 36px;
+        min-height: 50vh;
+        padding: 36px 20px;
+    }
 }
