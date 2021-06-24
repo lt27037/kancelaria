@@ -9,11 +9,23 @@
     background: $color-blue;
     padding-top: 96px;
     padding-bottom: 36px;
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+        min-height: 100vh;
+        row-gap: 36px;
+        padding: 48px 20px;
+        position: relative;
+    }
     &__logo{
         grid-column: 1;
         grid-row: 1;
         justify-self: start;
         align-self: start;
+        @include tabletWidth{
+            position: absolute;
+            right: 20px;
+            top: 48px;
+        }
     }
     &__wrapper{
         @include element-flex(row, flex-start, flex-start);
@@ -21,6 +33,10 @@
         grid-row: 1;
         width: 100%;
         height: 100%;
+        @include tabletWidth{
+            @include element-flex(column, flex-start, flex-start);
+            row-gap: 36px
+        }
     }
     &__list{
         @include element-flex(column, flex-start, flex-start);
@@ -28,6 +44,9 @@
         width: 50%;
         margin: 0;
         padding: 0;
+        @include tabletWidth{
+            width: 100%;
+        }
         &__title{
             font-family: $font-ultra;
             color: $font-light;
@@ -41,11 +60,19 @@
             padding: 12px 0;
             width: 100%;
             flex-wrap: nowrap;
+
+            @include tabletWidth{
+                padding: 10px 0;
+            }
         }
     }
     &__list.footer__menu{
         .footer__list__item{
             padding: 6px 0;
+
+            @include tabletWidth{
+                padding: 10px 0;
+            }
         }
     }
     &__link{
@@ -61,6 +88,11 @@
         width: 100%;
         height: 100%;
         color: $font-light;
+        @include tabletWidth{
+            text-align: center;
+            display: block;
+            padding: 0 12px;
+        }
     }
     &__linkWrapper{
         @include element-flex(row, flex-end, center);
@@ -69,6 +101,9 @@
         width: 100%;
         height: 100%;
         column-gap: 24px;
+        @include tabletWidth{
+            justify-content: space-between;
+        }
     }
     &__toTop{
         grid-column: 2;
@@ -81,5 +116,8 @@
         justify-self: end;
         align-self: end;
         margin: 25px 0;
+        @include tabletWidth{
+            margin-left: auto;
+        }
     }
 }
