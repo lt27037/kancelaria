@@ -6,4 +6,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+        padding: 36px 20px;
+    }
 }
