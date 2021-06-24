@@ -31,4 +31,8 @@
             }
         }
     }
+
+    @include tabletWidth{
+        display: none;
+    }
 }

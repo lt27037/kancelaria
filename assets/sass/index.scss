@@ -48,6 +48,11 @@ html{
     font-size: $font-xl;
     font-family: $font-ultra;
     margin: 36px 0 96px;
+
+    @include tabletWidth{
+        margin: 136px 0 69px;
+        padding: 0 20px;
+    }
 }
 
 .content-wp{

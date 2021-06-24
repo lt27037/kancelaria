@@ -973,6 +973,12 @@ body {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .currentPath {
+    display: none;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1654,6 +1660,25 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .practicArticles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 36px 8px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1848,6 +1873,13 @@ html {
 @media screen and (max-width: 768px) {
   .title {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 136px 0 69px;
+    padding: 0 20px;
   }
 }
 

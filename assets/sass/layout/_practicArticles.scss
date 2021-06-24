@@ -7,4 +7,8 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 24px;
     padding-bottom: 84px;
+    @include tabletWidth{
+        @include element-flex(column, flex-start, flex-start);
+        padding: 36px 8px;
+    }
 }
