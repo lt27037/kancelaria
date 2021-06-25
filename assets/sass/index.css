@@ -110,7 +110,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    display: none;
+    padding: 0 20px;
   }
 }
 
@@ -149,6 +149,12 @@ body {
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+
 .navbar__menu__link {
   padding: 12px;
   color: #F2F2F2;
@@ -162,6 +168,88 @@ body {
 .navbar__select {
   color: #F2F2F2;
   font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__select {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .button {
+    display: none;
+  }
+}
+
+.navbar__mobileButton {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__mobileButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border-radius: none;
+    border-style: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__mobileButton__content {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background: #F2F2F2;
+    border-radius: 99px;
+  }
+  .navbar__mobileButton__content::after, .navbar__mobileButton__content::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #F2F2F2;
+    position: absolute;
+    left: 0;
+    border-radius: 99px;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .navbar__mobileButton__content::after {
+    top: -9px;
+  }
+  .navbar__mobileButton__content::before {
+    bottom: -9px;
+  }
+}
+
+.navbar__mobileButton__mobileButton.active .navbar__mobileButton__content {
+  background: transparent;
+}
+
+.navbar__mobileButton__mobileButton.active .navbar__mobileButton__content::after {
+  -webkit-transform: translateX(-8px) rotateZ(-45deg) translateY(11px);
+          transform: translateX(-8px) rotateZ(-45deg) translateY(11px);
+}
+
+.navbar__mobileButton__mobileButton.active .navbar__mobileButton__content::before {
+  -webkit-transform: translateX(-8px) rotateZ(45deg) translateY(-11px);
+          transform: translateX(-8px) rotateZ(45deg) translateY(-11px);
 }
 
 .navbar.navbar--transparent {
@@ -1959,8 +2047,7 @@ html {
   .title {
     margin: 136px 0 69px;
     padding: 0 20px;
-    font-size: 40px;
-    word-break: break-all;
+    font-size: 35px;
   }
 }
 

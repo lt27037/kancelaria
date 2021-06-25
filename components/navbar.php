@@ -25,4 +25,7 @@
             PL
         </div>
     </div>
+    <button class="navbar__mobileButton">
+        <span class="navbar__mobileButton__content"></span>
+    </button>
 </header>
