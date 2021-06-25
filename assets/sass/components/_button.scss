@@ -6,6 +6,7 @@
     padding: 12px 36px;
     color: $font-dark;
     transition: background .2s;
+    text-decoration: none;
     &:hover{
         background: darken($color-yellow, 5%);
     }
@@ -25,4 +26,5 @@
     border-style: none;
     border: 1px solid $color-lightest-gray;
     background: transparent;
+    text-decoration: none;
 }

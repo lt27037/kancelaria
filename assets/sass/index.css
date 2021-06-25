@@ -54,6 +54,7 @@ body {
   color: #2B2B2B;
   -webkit-transition: background .2s;
   transition: background .2s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -74,6 +75,7 @@ body {
   border-style: none;
   border: 1px solid #F2F2F2;
   background: transparent;
+  text-decoration: none;
 }
 
 .navbar {
@@ -588,6 +590,7 @@ body {
   color: #2B2B2B;
   -webkit-transition: background .2s;
   transition: background .2s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -608,6 +611,7 @@ body {
   border-style: none;
   border: 1px solid #F2F2F2;
   background: transparent;
+  text-decoration: none;
 }
 
 .valutation {
@@ -1414,14 +1418,19 @@ body {
   color: #F2F2F2;
   padding-bottom: 252px;
   padding-top: 96px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 84px 1fr;
-      grid-template-rows: 84px 1fr;
-  -webkit-column-gap: 96px;
-          column-gap: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -1462,7 +1471,7 @@ body {
   }
 }
 
-.aboutSection__about__right, .aboutSection__about__left {
+.aboutSection__about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1476,8 +1485,30 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 4%;
+          column-gap: 4%;
   width: 100%;
-  height: 100%;
+  max-height: 486px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSection__about__wrapper {
+    max-height: unset;
+  }
+}
+
+.aboutSection__about__wrapper p {
+  color: #F2F2F2;
+  max-width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSection__about__wrapper p {
+    max-width: unset;
+    width: 100%;
+  }
 }
 
 .aboutSection__crew {
@@ -1495,6 +1526,10 @@ body {
   color: #F2F2F2;
   position: relative;
   padding: 92px 60px 92px 0px;
+}
+
+.aboutSection__crew p {
+  color: #F2F2F2;
 }
 
 @media screen and (max-width: 768px) {
@@ -1587,6 +1622,10 @@ body {
     padding: 36px 20px;
     min-height: unset;
   }
+}
+
+.aboutSection__values p {
+  color: #2B2B2B;
 }
 
 .aboutSection__values::after {
