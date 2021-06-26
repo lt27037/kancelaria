@@ -97,16 +97,54 @@
         <?php @include './components/valutation.php' ?>
         <section class="members">
             <h2 class="members__title">Członkowstwo</h2>
-            <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+            <div class="members__container">
+                <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+                <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+                <a href="#">
+                    <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/izba-adwokacka.png" alt="Logo" class="members__logo">
+                </a>
+            </div>
         </section>
         <section class="partners">
             <h2 class="partners__title">Partnerzy</h2>
-            <p class="partners__label">pl.gemixgroup.com</p>
-            <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+            <div class="partners__container">
+                <div class="partners__wrapper">
+                    <p class="partners__label">pl.gemixgroup.com</p>
+                    <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+                </div>
+                <div class="partners__wrapper">
+                    <p class="partners__label">pl.gemixgroup.com</p>
+                    <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+                </div>
+                <a href="#">
+                    <div class="partners__wrapper">
+                        <p class="partners__label">pl.gemixgroup.com</p>
+                        <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partners__wrapper">
+                        <p class="partners__label">pl.gemixgroup.com</p>
+                        <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="partners__wrapper">
+                        <p class="partners__label">pl.gemixgroup.com</p>
+                        <img src="./assets/img/logo-gemix@1x.svg" alt="Logo" class="partners__logo">
+                    </div>
+                </a>
+            </div>
         </section>
     </main>
     <?php @include './components/footer.php' ?> 
-    <script src="assets/js/navbar.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
 </body>
 </html>
 

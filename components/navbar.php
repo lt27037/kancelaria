@@ -21,8 +21,11 @@
         <a href="/#" class="baseLink">
             <button class="button">Bezpłatna Wycena</button>
         </a>
-        <div class="navbar__select">
-            PL
+        <div class="select">
+            <select class="select__button">
+                <option value="http://localhost:9000/" selected>PL</option>
+                <option value="http://localhost:9000/">EN</option>
+            </select>
         </div>
     </div>
     <button class="navbar__mobileButton">

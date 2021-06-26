@@ -7,9 +7,19 @@
     padding-top: 96px;
     padding-bottom: 96px;
     row-gap: 24px;
+    @include smDesktopWidth{
+        padding-top: 96px;
+        padding-bottom: 108px;
+    }
     @include tabletWidth{
         padding: 48px 20px;
         row-gap: 6px;
+    }
+    &__container{
+        @include element-flex(row, center, center);
+        column-gap: 72px;
+        row-gap: 72px;
+        flex-wrap: wrap;
     }
     &__title{
         font-size: $font-xl;
@@ -18,5 +28,13 @@
         @include tabletWidth{
             font-size: 30px;
         }
+    }
+    a,
+    &__logo{
+        @include element-flex(column, center, center);
+        width: 100%;
+        max-width: 280px;
+        padding: 0 10px;
+        object-fit: cover;
     }
 }

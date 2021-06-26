@@ -4,8 +4,12 @@
     @include constant-width;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include smDesktopWidth{
+        padding: 0 20px;
+    }
     @include tabletWidth{
         @include element-flex(column, flex-start, flex-start);
+        padding: 0;
     }
     &__title{
         font-family: $font-ultra;
