@@ -144,7 +144,9 @@
         </section>
     </main>
     <?php @include './components/footer.php' ?> 
-    <script type="module" src="assets/js/index.js"></script>
+    <script type="module" src="assets/js/navbar.js"></script>
+    <script type="module" src="assets/js/footer.js"></script>
+    <script type="module" src="assets/js/select.js"></script>
 </body>
 </html>
 

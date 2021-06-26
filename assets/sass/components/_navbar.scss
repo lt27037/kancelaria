@@ -37,6 +37,12 @@
     .select{
         color: $font-light;
         font-size: $font-s;
+        .select__button{
+            background: transparent;
+            color: $font-light;
+            border: none;
+            border-style: none;
+        }
 
         @include tabletWidth{
             display: none;

@@ -178,6 +178,13 @@ body {
   font-size: 14px;
 }
 
+.navbar .select .select__button {
+  background: transparent;
+  color: #F2F2F2;
+  border: none;
+  border-style: none;
+}
+
 @media screen and (max-width: 768px) {
   .navbar .select {
     display: none;
