@@ -45,6 +45,8 @@
         @include tabletWidth{
             padding: 0;
             margin: 0;
+            font-size: 40px;
+            line-height: 50px;
         }
     }
     &__rightColumn{

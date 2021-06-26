@@ -24,6 +24,8 @@
         @include tabletWidth{
             width: auto;
             padding: 0 20px 0 0;
+            font-size: 40px;
+            line-height: 50px;
         }
     }
     &__text{
