@@ -147,6 +147,7 @@
     <script type="module" src="assets/js/navbar.js"></script>
     <script type="module" src="assets/js/footer.js"></script>
     <script type="module" src="assets/js/select.js"></script>
+    <script type="module" src="assets/js/mobileMenu.js"></script>
 </body>
 </html>
 
