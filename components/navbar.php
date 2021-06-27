@@ -1,7 +1,7 @@
 <!-- animation class: navbar--transparent -->
 <header class="navbar">
     <div class="navbar__wrapper">
-        <img src="./assets/img/logo.svg" alt="logo" class="navbar__logo">
+        <img src="../assets/img/logo.svg" alt="logo" class="navbar__logo">
         <ul class="navbar__menu">
             <a href="/" class="navbar__menu__link">
                 <li class="navbar__menu__item">O firmie</li>

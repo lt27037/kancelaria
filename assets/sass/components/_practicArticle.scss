@@ -7,7 +7,10 @@
     min-height: 260px;
     width: 100%;
     background: transparent;
-    transition: background .2s ;
+    transition: background .2s;
+    @include tabletWidth{
+        padding: 36px 12px;
+    }
     &:hover{
         background: #E2E2E2;
     }

@@ -898,6 +898,12 @@ body {
   transition: background .2s;
 }
 
+@media screen and (max-width: 768px) {
+  .practicArticle {
+    padding: 36px 12px;
+  }
+}
+
 .practicArticle:hover {
   background: #E2E2E2;
 }
