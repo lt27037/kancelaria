@@ -13,17 +13,43 @@
     transition: background .3s;
     @include tabletWidth{
         padding: 0 20px;
+        justify-content: stretch;
+        column-gap: 24px;
+    }
+    &__logo{
+        @include tabletWidth{
+            max-width: 150px;
+        }
+    }
+    .mobile--button{
+        display: none;
+        text-decoration: none;
+        @include tabletWidth{
+            display: flex;
+            .button{
+                margin-top: 72px;
+                display: flex;
+            }
+        }
     }
     &__wrapper{
         @include element-flex(row, center, center);
         column-gap: 36px;
+        &:first-of-type{
+            @include tabletWidth{
+                flex-grow: 1;
+            }
+        }
+        @include tabletWidth{
+            justify-content: flex-start;
+        }
     }
     &__menu{
         @include element-flex(row, flex-start, center);
         list-style: none;
 
         @include tabletWidth{
-            @include element-flex(column, flex-start, flex-start);
+            @include element-flex(column, center, center);
             position: fixed;
             width: 100vw;
             height: 101vh;
@@ -60,7 +86,7 @@
         }
 
         @include tabletWidth{
-            display: none;
+            display: flex;
         }
     }
     .button{
@@ -125,24 +151,9 @@
     }
     .navbar__menu{
         padding: 0;
-        @include tabletWidth{
-            @include element-flex(column, flex-start, flex-start);
-            position: fixed;
-            width: 100vw;
-            height: 101vh;
-            right: 0;
-            top: 0;
-            background: $color-blue;
-            row-gap: 24px;
-            padding: 72px 24px;
-            margin: 0;
-        }
         &__item{
             font-size: $font-s;
             font-weight: 500;
-            @include tabletWidth{
-                font-size: $font-m;
-            }
         }
     }
 }
