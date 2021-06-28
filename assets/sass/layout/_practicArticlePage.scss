@@ -33,6 +33,7 @@
     width: 100%;
     max-width: 300px;
     list-style: none;
+    &__item--selected,
     &__item{
         letter-spacing: 0.5px;
         padding: 7px 0;
@@ -44,7 +45,7 @@
             }
         }
     }
-    .practic--active a{
+    &__item--selected a{
         font-weight: 800; 
         font-family: $font-popins;
         color: $color-blue;

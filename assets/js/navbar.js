@@ -1,6 +1,6 @@
 const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
+const handleScroll = () => {
 	if (window.innerWidth > 786) {
 		if (window.pageYOffset < 300) {
 			navbar.classList.add("navbar--transparent");
@@ -10,4 +10,7 @@ window.addEventListener("scroll", () => {
 			}
 		}
 	}
-});
+};
+
+handleScroll();
+window.addEventListener("scroll", handleScroll);
